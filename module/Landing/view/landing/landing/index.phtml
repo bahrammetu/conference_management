@@ -1,0 +1,1172 @@
+<!--<input id="requestUriRegulated" type="hidden"  value="<?php echo $this->requestUriRegulated; ?>"></input>
+<input id="langCode" type="hidden"  value="<?php echo $this->langCode; ?>"></input>-->
+
+<div id="wrapper">
+
+    <div id="banner">
+        <ul id="home-slider">
+            <li> <img src="<?php echo $this->basePath('images/banner-img-1.jpg') ?>" alt="img">
+                <div class="caption">
+                    <div class="container"> <strong class="logo"><img src="<?php echo $this->basePath('images/banner-logo-umtik.png') ?>" alt="img"></strong> <strong class="title">UMTIK</strong>
+                        <h1>2018 <span>Conference</span></h1>
+                        <ul>
+                            <li> <i class="fa fa-calendar"></i> 26-29 JUNE<br>
+                                2018</li>
+                            <li> <i class="fa fa-users"></i> 12 Speakers<br>
+                                Participating</li>
+                            <li> <i class="fa fa-map-marker"></i> Eskişehir,<br>
+                                Turkey</li>
+                        </ul>
+                        <a href="#" class="btn-style-1">Submit Your Paper</a> </div>
+                </div>
+            </li>
+            <li> <img src="<?php echo $this->basePath('images/banner-img-2.jpg') ?>" alt="img">
+                <div class="caption">
+                    <div class="container"> <strong class="logo"><img src="<?php echo $this->basePath('images/banner-logo-umtik.png') ?>" alt="img"></strong>
+                        <h1>Participate in 18th UMTIK Conference</h1>
+                        <div class="timer-box margin-increase">
+                            <div class="countdown">
+                                <div class="clock">
+                                    <div class="clock-item clock-days countdown-time-value">
+                                        <div class="inner">
+                                            <div id="canvas-days" class="clock-canvas"></div>
+                                            <div class="text">
+                                                <p class="val" id="days_ph">0</p>
+                                                <p class="type-days type-time">DAYS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clock-item clock-hours countdown-time-value">
+                                        <div class="inner">
+                                            <div id="canvas-hours" class="clock-canvas"></div>
+                                            <div class="text">
+                                                <p class="val" id="hours_ph">0</p>
+                                                <p class="type-hours type-time">HOURS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clock-item clock-minutes countdown-time-value">
+                                        <div class="inner">
+                                            <div id="canvas-minutes" class="clock-canvas"></div>
+                                            <div class="text">
+                                                <p class="val" id="minutes_ph">0</p>
+                                                <p class="type-minutes type-time">MINuteS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clock-item clock-seconds countdown-time-value count-down-time-value-afternone">
+                                        <div class="inner">
+                                            <div id="canvas-seconds" class="clock-canvas"></div>
+                                            <div class="text">
+                                                <p class="val" id="seconds_ph">0</p>
+                                                <p class="type-seconds type-time">Seconds</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-style-1">Get Registred</a> </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <header id="header">
+        <div class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="logo-box"> <a href="index.phtml" class="logo"> <img src="<?php echo $this->basePath('images/logo-umtik.png') ?>" alt="img"> <span>UMTIK<b>2018 Conference</b></span> </a> </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="search-box">
+                            <div class="dropdown">
+                                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-search btn-search"></i> </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <form>
+                                            <input type="text" placeholder="Enter you keywords" required>
+                                            <button type="submit" value=""><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-inverse">
+                            <div class="navbar-header">
+                                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button"> <span class="sr-only">Conferences <span>WP THEME</span></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="navbar">
+                                <ul id="nav" class="nav navbar-nav">
+                                    <li><a target_id="header" onmouseover="" style="cursor: pointer;" onclick="animate_to_place()">Home</a></li>
+                                    <li><a target_id="organizing_committee" onmouseover="" style="cursor: pointer;" onclick="animate_to_place()">Committees</a>
+                                        <!--                                        <ul>
+                                                                                    <li><a href="speaker-details.html">Speaker Details</a></li>
+                                                                                </ul>-->
+                                    </li>
+                                    <li><a target_id="program_section" onmouseover="" style="cursor: pointer;" onclick="animate_to_place()">Programs</a></li>
+                                    <li><a target_id="registration_section" onmouseover="" style="cursor: pointer;" onclick="animate_to_place()">Registration</a></li>
+                                    <li><a target_id="special_sessions" onmouseover="" style="cursor: pointer;" onclick="animate_to_place()">Special Sessions</a></li>                                    
+                                    <li><a target_id="location_section" onmouseover="" style="cursor: pointer;" onclick="animate_to_place()">Locations</a></li>
+                                    <!--                                    <li class="mega-menu"><a href="#">Blog</a>
+                                                                            <div class="mega-col">
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <h3>Blog Full</h3>
+                                                                                    </li>
+                                                                                    <li><a href="blog-listing.html">Blog Full With Right Sidebar</a></li>
+                                                                                    <li><a href="blog-right-sidebar.html">Blog Full With Left Sidebar</a></li>
+                                                                                    <li><a href="blog-dual-sidebar.html">Blog Full With Both Sidebar</a></li>
+                                                                                    <li><a href="blog-full.html">Blog Full Without Sidebar</a></li>
+                                                                                </ul>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <h3>Blog Columns</h3>
+                                                                                    </li>
+                                                                                    <li><a href="#">Blog 1 Column with Right Sidebar</a></li>
+                                                                                    <li><a href="#">Blog 2 Columns with Right Sidebar</a></li>
+                                                                                    <li><a href="blog-3-columns.html">Blog 3 Columns</a></li>
+                                                                                    <li><a href="blog-4-columns.html">Blog 4 Columns</a></li>
+                                                                                </ul>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <h3>Blog Medium</h3>
+                                                                                    </li>
+                                                                                    <li><a href="blog-medium.html">Blog Medium with Right Sidebar</a></li>
+                                                                                    <li><a href="blog-medium-left-sidebar.html">Blog Medium with Left Sidebar</a></li>
+                                                                                    <li><a href="blog-medium-dual-sidebar.html">Blog Medium with Both Sidebar</a></li>
+                                                                                    <li><a href="blog-medium.html">Blog Medium with Sidebar</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </li>-->
+                                    <!--                                    <li><a href="#">Pages</a>
+                                                                            <ul>
+                                                                                <li><a href="about.html">About us</a></li>
+                                                                                <li><a href="speakers.html">Speakers</a></li>
+                                                                                <li><a href="contact-1.html">Contact us 1</a></li>
+                                                                                <li><a href="contact-2.html">Contact us 2</a></li>
+                                                                                <li><a href="#">Price Tables</a></li>
+                                                                                <li><a href="booking-form.html">Booking Form</a></li>
+                                                                                <li><a href="#">Testimonials</a></li>
+                                                                            </ul>
+                                                                        </li>-->
+                                    <li><a target_id="sponsors_section" onmouseover="" style="cursor: pointer;" onclick="animate_to_place()">Sponsors</a></li>
+                                    <li><a href="#">Archive</a>
+                                        <ul>
+                                            <li><a href="#">UMTIK 2016</a></li>
+                                            <li><a href="#">UMTIK 2014</a></li>
+                                            <li><a href="#">UMTIK 2012</a></li>
+                                            <li><a href="#">UMTIK 2010</a></li>
+                                            <li><a href="#">UMTIK 2008</a></li>
+                                            <li><a href="#">UMTIK 2006</a></li>
+                                            <li><a href="#">UMTIK 2004</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="main">
+
+        <section class="about-section">
+            <div class="container">
+                <div class="holder">
+                    <h2>About UMTIK</h2>
+                    <p>The first UMTIK conference was organized by MATIMAREN as a national event in Turkish language in 1984 at the Mechanical Engineering Department of the Middle East Technical University (METU), Ankara with a nation-wide participation of Turkish companies and universities. MATIMAREN, Machine Design and Production Research Center (formerly Institute) was initiated in 1979 by a group of faculty in the Mechanical Engineering Department of METU, Ankara, Turkey. The Center aimed to constitute the university-industry cooperation by conducting applied research for industry. The center conducted numerous projects for industry and soon after needed to share this experience and knowledge with other universities and companies by organizing a national conference. This was the idea behind biannual UMTIK conferences which became constitutional and continued without interruption until now.</p>
+                    <div id='about_hidden' style="visibility:hidden;display:none">
+                        <p> From the sixth conference (1994) onwards, UMTIK conferences became international and bilingual and continued to be held in METU Campus for the next three events. UMTIK 2002 (10th conference) was organized in Cappadocia; hence, it became the first UMTIK conference which was organized outside the METU Campus. UMTIK conferences started to travel around Turkey thereafter: UMTIK 2004 in Antalya, UMTIK 2006 in Kuşadası, UMTIK 2008 in Istanbul, UMTIK 2010 at the Northern Cyprus Campus of METU, Güzelyurt in the Turkish Republic of Northern Cyprus, UMTIK 2012 in Denizli-Pamukkale , UMTIK 2014 in İzmir and UMTIK 2016 will be be organized in Bursa; center of the Turkish Automotive Industry.</p>
+                        <p> International Program Committee (IPC) was established for UMTIK 2004 for the first time to take the responsibility of organizing and chairing sessions, preparing and refereeing papers. UMTIK 2004 also introduced a new feature to the conference format by inviting and hosting keynote speakers. UMTIK 2006 was the first event which introduced special sessions: 5 special sessions were organized by the IPC and the Organization Committee (OC) members. IPC became a well established part of UMTIK conferences for UMTIK 2006 organized in Kuşadası. UMTIK 2008 introduced three new features: seminars, sponsors sessions and a forum on a selected issue.</p>
+                        <p> UMTIK 2010 bore all those features and introduced a one-day industrial tutorials program and a workshop organized in parallel and mainly addressed to industrialists on the first day of the Conference. The Organizing Committee is traditionally established from the members of MATIMAREN and the faculty of the Mechanical Engineering Department of METU until UMTIK 2012. UMTIK 2012 was organized in Pamukkale, Denizli. It was the first conference which had an Organizing Committee having two members not affiliated to MATIMAREN and/or to METU. The first day of the Conference was organized under the title "Machining Day" as a separate organization, but yet integrated to the main Conference Program.</p>
+                        <p> "Machining Day" was dedicated to the honor of Prof. Dr. Yusuf Altıntaş because of his invaluable contributions to the world literature in metal cutting and machine tools. Cutting-edge research results were presented by the leading researchers in the area. Izmir hosted the UMTIK 2014 as the 16th event to celebrate the 30th anniversary since the first event. A special forum session "From 1984 to 2014, 30 years of UMTIK Conferences" was organized on the third day of the Conference International Program Committee (IPC) was established for UMTIK 2004 for the first time to take the responsibility of organizing and chairing sessions, preparing and refereeing papers. UMTIK 2004 also introduced a new feature to the conference format by inviting and hosting keynote speakers. </p>
+                        <p> UMTIK 2006 was the first event which introduced special sessions: 5 special sessions were organized by the IPC and the Organization Committee (OC) members. IPC became a well established part of UMTIK conferences for UMTIK 2006 organized in Kuşadası. UMTIK 2008 introduced three new features: seminars, sponsors sessions and a forum on a selected issue. UMTIK 2010 bore all those features and introduced a one-day industrial tutorials program and a workshop organized in parallel and mainly addressed to industrialists on the first day of the Conference. The Organizing Committee is traditionally established from the members of MATIMAREN and the faculty of the Mechanical Engineering Department of METU until UMTIK 2012. </p>
+                        <p> UMTIK 2012 was organized in Pamukkale, Denizli. It was the first conference which had an Organizing Committee having two members not affiliated to MATIMAREN and/or to METU. The first day of the Conference was organized under the title "Machining Day" as a separate organization, but yet integrated to the main Conference Program. "Machining Day" was dedicated to the honor of Prof. Dr. Yusuf Altıntaş because of his invaluable contributions to the world literature in metal cutting and machine tools. Cutting-edge research results were presented by the leading researchers in the area. </p>
+                        <p> Izmir hosted the UMTIK 2014 as the 16th event to celebrate the 30th anniversary since the first event. A special forum session "From 1984 to 2014, 30 years of UMTIK Conferences" was organized on the third day of the Conference before the Conference Dinner. The organizing committee members of the first event with their wives had a reunion to remember all the past events since the first one and to discuss the development and the current and the future status of the conference with the new members of the organizing committee and the conference participants. Reunion of the organizing committee members of the first event continued at the dinner with refreshed memories together with the conference participants in a nice athmosphere. "Machining Day Program" became a traditional part of UMTIK conferences and organized as the Last Day Program of UMTIK 2014.</p>
+                        <p> "Machining Day" will be organized as the First Day Program on July 12, 2016 in UMTIK 2016 jointly by Prof. Dr. Erhan Budak and Prof. Dr. İsmail Lazoğlu. The Organizing Committee of UMTIK 2016 has two members each from METU and Atilim University and one member each from Uludağ University, Balıkesir University and Gazi University.</p>
+                    </div>
+                    <a class="btn-style-1" onclick="hide_and_unhide()" hiding_div_id="about_hidden"><i class="fa fa-chevron-circle-right"></i>Show more</a> 
+                </div>
+            </div>
+        </section>
+
+        <section class="organizing-committee-section" id="organizing_committee_section">
+            <div class="container">
+                <h2>Organizing Committee</h2>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <ul id='organizing_committee'>
+                            <li>
+                                <!--<div class="col-md-3 col-sm-6">-->
+                                <div class="box">
+                                    <div class="inner-box">
+                                        <div class="frame"> <img src="<?php echo $this->basePath('images/top-speakers/top-speakers-img-1.jpg') ?>" alt="img">
+                                            <div class="name-box"><strong class="name">Prof. Dr. S. Engin KILIÇ</strong></div>
+                                        </div>
+                                        <em class="description">Atılım University</em>
+                                        <div class="caption"> <strong class="name">Prof. Dr. S. Engin KILIÇ</strong> <em>Head of Manufacturing Eng. Dept. - Atılım University</em>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <ul>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-twitter"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </li>  
+                            <li>
+                                <!--<div class="col-md-3 col-sm-6">-->
+                                <div class="box">
+                                    <div class="inner-box">
+                                        <div class="frame"> <img src="<?php echo $this->basePath('images/top-speakers/top-speakers-img-2.jpg') ?>" alt="img">
+                                            <div class="name-box"><strong class="name">Prof. Dr. Metin AKKÖK</strong></div>
+                                        </div>
+                                        <em class="description">METU</em>
+                                        <div class="caption"> <strong class="name">Prof. Dr. Metin AKKÖK</strong> <em>Professor at METU Mechanical Eng. Dept.</em>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <ul>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-twitter"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </li>  
+                            <li>
+                                <!--<div class="col-md-3 col-sm-6">-->
+                                <div class="box">
+                                    <div class="inner-box">
+                                        <div class="frame"> <img src="<?php echo $this->basePath('images/top-speakers/top-speakers-img-3.jpg') ?>" alt="img">
+                                            <div class="name-box"><strong class="name">Prof. Dr. Abdülkadir ERDEN</strong></div>
+                                        </div>
+                                        <em class="description">Atılım University</em>
+                                        <div class="caption"> <strong class="name">Prof. Dr. Abdülkadir ERDEN</strong> <em>Head of Mechatronics Eng. Dept. - Atılım University</em>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <ul>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-twitter"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </li>  
+                            <li>
+                                <!--<div class="col-md-3 col-sm-6">-->
+                                <div class="box">
+                                    <div class="inner-box">
+                                        <div class="frame"> <img src="<?php echo $this->basePath('images/committee_members/konukseven.png') ?>" alt="img">
+                                            <div class="name-box"><strong class="name">Assoc. Prof. Dr. E. İlhan Konukseven</strong></div>
+                                        </div>
+                                        <em class="description">METU</em>
+                                        <div class="caption"> <strong class="name">Assoc. Prof. Dr. E. İlhan Konukseven</strong> <em>Professor at METU Mechanical Eng. Dept.</em>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <ul>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-twitter"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </li>  
+                            <li>   
+                                <!--<div class="col-md-3 col-sm-6">-->
+                                <div class="box">
+                                    <div class="inner-box">
+                                        <div class="frame"> <img src="<?php echo $this->basePath('images/top-speakers/top-speakers-img-2.jpg') ?>" alt="img">
+                                            <div class="name-box"><strong class="name">Prof. Dr. M. Cemal ÇAKIR</strong></div>
+                                        </div>
+                                        <em class="description">Uludağ University</em>
+                                        <div class="caption"> <strong class="name">Prof. Dr. M. Cemal ÇAKIR</strong> <em>Professor at Uludağ University Mechanical Eng. Dept.</em>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <ul>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-twitter"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </li>  
+                            <li>   
+                                <!--<div class="col-md-3 col-sm-6">-->
+                                <div class="box">
+                                    <div class="inner-box">
+                                        <div class="frame"> <img src="<?php echo $this->basePath('images/top-speakers/top-speakers-img-3.jpg') ?>" alt="img">
+                                            <div class="name-box"><strong class="name">Prof. Dr. Ulvi ŞEKER</strong></div>
+                                        </div>
+                                        <em class="description">Gazi University</em>
+                                        <div class="caption"> <strong class="name">Prof. Dr. Ulvi ŞEKER</strong> <em>Professor at Gazi University Mechanical Eng. Dept.</em>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <ul>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-twitter"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </li>  
+                            <li>
+                                <!--<div class="col-md-3 col-sm-6">-->
+                                <div class="box">
+                                    <div class="inner-box">
+                                        <div class="frame"> <img src="<?php echo $this->basePath('images/top-speakers/top-speakers-img-4.jpg') ?>" alt="img">
+                                            <div class="name-box"><strong class="name">Prof. Dr. Ali ORAL</strong></div>
+                                        </div>
+                                        <em class="description">Balıkesir University</em>
+                                        <div class="caption"> <strong class="name">Prof. Dr. Ali ORAL</strong> <em>Professor at Balıkesir University Mechanical Eng. Dept.</em>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <ul>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-twitter"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="hexagon-style-1"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id='committees' style="visibility:hidden;display:none">
+                    <section class="top-speakers-section" id="speakers_section">
+                        <div class="container">
+                            <h2>Steering Committee</h2>
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="box">
+                                        <div class="inner-box">
+                                            <div class="frame"> <img src="<?php echo $this->basePath('images/top-speakers/top-speakers-img-1.jpg') ?>" alt="img">
+                                                <div class="name-box"><strong class="name">Prof. Dr. S. Engin KILIÇ</strong></div>
+                                            </div>
+                                            <em class="description">Atılım University</em>
+                                            <div class="caption"> <strong class="name">Prof. Dr. S. Engin KILIÇ</strong> <em>Head of Manufacturing Eng. Dept. - Atılım University</em>
+                                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="box">
+                                        <div class="inner-box">
+                                            <div class="frame"> <img src="<?php echo $this->basePath('images/top-speakers/top-speakers-img-2.jpg') ?>" alt="img">
+                                                <div class="name-box"><strong class="name">Asst. Prof. Dr. Besim BARANOĞLU</strong></div>
+                                            </div>
+                                            <em class="description">Atılım University</em>
+                                            <div class="caption"> <strong class="name">Asst. Prof. Dr. Besim BARANOĞLU</strong> <em>Professor at Atılım Manufacturing Eng. Dept.</em>
+                                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="box">
+                                        <div class="inner-box">
+                                            <div class="frame"> <img src="<?php echo $this->basePath('images/committee_members/bahram_lotfi_sadigh.png') ?>" alt="img">
+                                                <div class="name-box"><strong class="name">Asst. Prof. Dr. Bahram LOTFI SADIGH</strong></div>
+                                            </div>
+                                            <em class="description">Atılım University</em>
+                                            <div class="caption"> <strong class="name">Asst. Prof. Dr. Bahram LOTFI SADIGH</strong> <em>Professor at Atılım Manufacturing Eng. Dept.</em>
+                                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<a href="#" class="btn-style-1">See All speakers</a> </div>-->
+                        </div>
+                    </section>
+                </div>
+                <a class="btn-style-1" onclick="hide_and_unhide()" hiding_div_id="committees"><i class="fa fa-chevron-circle-right"></i>Show more</a>
+            </div>        
+        </section>
+
+        <section id="program_section" class="program-section">
+            <div class="container">
+                <h2>Program Schedule</h2>
+                <div class="row">
+                    <div class="col-md-2">
+                        <ul class="nav nav-tabs" role="tablist" id="myTab">
+                            <li role="presentation" class="active"><a href="#26_june" data-toggle="tab">
+                                    <div class="hexagon-style-5"><span>26 <b> June, 2018</b></span></div>
+                                </a></li>
+                            <li role="presentation"><a href="#27_june" data-toggle="tab">
+                                    <div class="hexagon-style-5"><span>27 <b> June, 2018</b></span></div>
+                                </a></li>
+                            <li role="presentation"><a href="#28_june" data-toggle="tab">
+                                    <div class="hexagon-style-5"><span>28 <b> June, 2018</b></span></div>
+                                </a></li>
+                            <li role="presentation"><a href="#29_june" data-toggle="tab">
+                                    <div class="hexagon-style-5"><span>29 <b> June, 2018</b></span></div>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="26_june">
+                                <div class="tab-content-box">
+                                    <div class="tab-head"><strong class="title"><span>Conference Title:</span> Diving into Experience Mapping</strong></div>
+                                    <ul>
+                                        <li>
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Design Decisions Through The Performance</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-1.jpg') ?>" alt="img"></a></div>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-2.jpg') ?>" alt="img"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                        <li class="color-left">
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Start Your Own Business</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb-box">
+                                                        <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-3.jpg') ?>" alt="img"></a></div>
+                                                        <a href="#" class="btn-style-1">Matthew White</a> </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 color-right">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-head"><strong class="title-2"><span>13:00 - 14:00</span> LUNCH BREAK</strong></div>
+                                    <ul>
+                                        <li>
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Build a Growing Platform</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-1.jpg') ?>" alt="img"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                        <li class="color-left">
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Content Production Planning</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-1.jpg') ?>" alt="img"></a></div>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-2.jpg') ?>" alt="img"></a></div>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-3.jpg') ?>" alt="img"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 color-right">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="27_june">
+                                <div class="tab-content-box">
+                                    <div class="tab-head"><strong class="title"><span>Conference Title:</span> Diving into Experience Mapping</strong></div>
+                                    <ul>
+                                        <li>
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Design Decisions Through The Performance</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-1.jpg') ?>" alt="img"></a></div>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-2.jpg') ?>" alt="img"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                        <li class="color-left">
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Start Your Own Business</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb-box">
+                                                        <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-3.jpg') ?>" alt="img"></a></div>
+                                                        <a href="#" class="btn-style-1">Matthew White</a> </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 color-right">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Content Production Planning</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-1.jpg') ?>" alt="img"></a></div>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-2.jpg') ?>" alt="img"></a></div>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-3.jpg') ?>" alt="img"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-head"><strong class="title-2"><span>13:00 - 14:00</span> LUNCH BREAK</strong></div>
+                                    <ul>
+                                        <li class="color-left">
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Content Production Planning</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-3.jpg') ?>" alt="img"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 color-right">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="28_june">
+                                <div class="tab-content-box">
+                                    <div class="tab-head"><strong class="title"><span>Conference Title:</span> Diving into Experience Mapping</strong></div>
+                                    <ul>
+                                        <li>
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Design Decisions Through The Performance</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-1.jpg') ?>" alt="img"></a></div>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-2.jpg') ?>" alt="img"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                        <li class="color-left">
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Start Your Own Business</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb-box">
+                                                        <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-3.jpg') ?>" alt="img"></a></div>
+                                                        <a href="#" class="btn-style-1">Matthew White</a> </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 color-right">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-head"><strong class="title-2"><span>13:00 - 14:00</span> LUNCH BREAK</strong></div>
+                                    <ul>
+                                        <li>
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Build a Growing Platform</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-1.jpg') ?>" alt="img"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                        <li class="color-left">
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Content Production Planning</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-1.jpg') ?>" alt="img"></a></div>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-2.jpg') ?>" alt="img"></a></div>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-3.jpg') ?>" alt="img"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 color-right">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="29_june">
+                                <div class="tab-content-box">
+                                    <div class="tab-head"><strong class="title"><span>Conference Title:</span> Diving into Experience Mapping</strong></div>
+                                    <ul>
+                                        <li>
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Design Decisions Through The Performance</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-1.jpg') ?>" alt="img"></a></div>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-2.jpg') ?>" alt="img"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                        <li class="color-left">
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Start Your Own Business</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb-box">
+                                                        <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-3.jpg') ?>" alt="img"></a></div>
+                                                        <a href="#" class="btn-style-1">Matthew White</a> </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 color-right">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Content Production Planning</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-1.jpg') ?>" alt="img"></a></div>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-2.jpg') ?>" alt="img"></a></div>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-3.jpg') ?>" alt="img"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-head"><strong class="title-2"><span>13:00 - 14:00</span> LUNCH BREAK</strong></div>
+                                    <ul>
+                                        <li class="color-left">
+                                            <div class="col-md-9">
+                                                <div class="left-box">
+                                                    <h3><b>Agenda:</b> Content Production Planning</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    <div class="thumb"><a href="#"><img src="<?php echo $this->basePath('images/program/program-img-3.jpg') ?>" alt="img"></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 color-right">
+                                                <div class="detail-col">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i><span>9:00 am - 11:30 pm</span></li>
+                                                        <li><i class="fa fa-user"></i><span>Angelina Hol<br>
+                                                                Matthew White</span></li>
+                                                        <li><i class="fa fa-map-marker"></i><span>Conference Building<br>
+                                                                Hall B-1</span></li>
+                                                    </ul>
+                                                    <a href="#" class="btn-style-1">More Details</a> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration_section" class="tickets-section">
+            <div class="container">
+                <h2>Registration Fees</h2>
+                <div class="plan-box">
+                    <h3>Students</h3>
+                    <div class="amount-box"> <strong class="price"><sup>$</sup>130</strong> <span>Full Entry</span> </div>
+                    <ul>
+                        <li><i class="fa fa-check-circle-o"></i>Full Sessions Attend</li>
+                        <li><i class="fa fa-check-circle-o"></i>Free WiFi in Conference</li>
+                        <li><i class="fa fa-check-circle-o"></i>Coffee in Conference</li>
+                        <li><i class="fa fa-check-circle-o"></i>Lunch</li>
+                        <li><i class="fa fa-check-circle-o"></i>Snacks in Conference</li>
+                    </ul>
+                    <a href="#" class="btn-style-1">Register Now</a> </div>
+                <div class="plan-box scale-1">
+                    <h3>Regular Registration</h3>
+                    <!--<span class="batch">Popular</span>-->
+                    <div class="amount-box"> <strong class="price"><sup>$</sup>260</strong> <span>Full Entry</span> </div>
+                    <ul>
+                        <li><i class="fa fa-check-circle-o"></i>Full Sessions Attend</li>
+                        <li><i class="fa fa-check-circle-o"></i>Free WiFi in Conference</li>
+                        <li><i class="fa fa-check-circle-o"></i>Coffee in Conference</li>
+                        <li><i class="fa fa-check-circle-o"></i>Lunch</li>
+                        <li><i class="fa fa-check-circle-o"></i>Gala Dinner</li>
+                    </ul>
+                    <a href="#" class="btn-style-1">Register Now</a> </div>
+                <div class="plan-box">
+                    <h3>Single Day Registration</h3>
+                    <div class="amount-box"> <strong class="price"><sup>$</sup>100</strong> <span>One Day Entry</span> </div>
+                    <ul>
+                        <li><i class="fa fa-check-circle-o"></i>Registered Day Entry</li>
+                        <li><i class="fa fa-check-circle-o"></i>Registered Day Sessions Attend</li>
+                        <li><i class="fa fa-check-circle-o"></i>Free WiFi in Conference</li>
+                        <li><i class="fa fa-check-circle-o"></i>Coffee in Conference</li>
+                        <li><i class="fa fa-check-circle-o"></i>Registered Day Lunch</li>
+                        <li><i class="fa fa-circle-thin"></i>Snacks in Conference</li>
+                    </ul>
+                    <a href="#" class="btn-style-1">Register Now</a> </div>
+            </div>
+        </section>
+
+        <section class="blog-section" id='special_sessions'>
+            <div class="container">
+                <h2>Special Sessions</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box"> <img src="<?php echo $this->basePath('images/blog/blog-post-img-1.jpg') ?>" alt="img">
+                            <div class="date-box"><strong>27 <span>June</span></strong></div>
+                            <div class="text-box">
+                                <h3><a href="#">Special Session Title</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut magna et dolore ...<a href="#">[+]</a></p>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-user"></i>Manager</a></li>
+                                    <li><a href="#"><i class="fa fa-paperclip"></i>Papers</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-in"></i>Submit Paper</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box"> <img src="<?php echo $this->basePath('images/blog/blog-post-img-2.jpg') ?>" alt="img">
+                            <div class="date-box"><strong>28 <span>June</span></strong></div>
+                            <div class="text-box">
+                                <h3><a href="#">Special Session Title</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut magna et dolore ...<a href="#">[+]</a></p>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-user"></i>Manager</a></li>
+                                    <li><a href="#"><i class="fa fa-paperclip"></i>Papers</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-in"></i>Submit Paper</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box"> <img src="<?php echo $this->basePath('images/blog/blog-post-img-3.jpg') ?>" alt="img">
+                            <div class="date-box"><strong>29 <span>June</span></strong></div>
+                            <div class="text-box">
+                                <h3><a href="#">Special Session Title</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut magna et dolore ...<a href="#">[+]</a></p>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-user"></i>Manager</a></li>
+                                    <li><a href="#"><i class="fa fa-paperclip"></i>Papers</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-in"></i>Submit Paper</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<a href="#" class="btn-style-1">View More Posts</a> </div>-->
+        </section>
+
+<!--        <section class="home-testimonials">
+    <div class="container">
+        <ul id="home-testimonials-slider">
+            <li>
+                <div class="holder">
+                    <strong class="name">Session Name</strong> <strong class="designation">Subject</strong>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    <strong class="name">Session Manager</strong> <strong class="designation">Affiliation</strong> </div>
+            </li>
+            <li>
+                <div class="holder">
+                    <strong class="name">Session Name</strong> <strong class="designation">Subject</strong>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    <strong class="name">Session Manager</strong> <strong class="designation">Affiliation</strong> </div>
+            </li>
+        </ul>
+    </div>
+</section>-->
+
+        <section id="location_section" class="venue-location">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="location-box">
+                            <h2>Venue Location</h2>
+                            <address>
+                                <strong>Atılım University, Manufacturing Engineering Department, Incek, Gölbaşı, Ankara</strong>
+                                <ul>
+                                    <li><i class="fa fa-phone"></i>+90 312 586 8888</li>
+                                    <li><i class="fa fa-phone"></i>+90 312 586 8884</li>
+                                    <!--<li><i class="fa fa-skype"></i>0123 456 7890</li>-->
+                                    <li><i class="fa fa-envelope-o"></i><a href="mailto:">info(at)umtik.com </a></li>
+                                    <li><i class="fa fa-globe"></i><a href="#">www.umtik.com</a></li>
+                                </ul>
+                                <a href="#" class="btn-style-1">See Suitable Accommodation</a>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-md-6 padd-right-none">
+                        <div class="location-right-box"> 
+                            <strong class="logo"><img src="<?php echo $this->basePath('images/location-logo-umtik.png') ?>" alt="img"></strong> 
+                            <strong class="title">UMTIK</strong> <span>2018  <b>Conference</b></span> 
+                            <a target="_blank" href="https://www.google.com/maps/place/At%C4%B1l%C4%B1m+%C3%9Cniversitesi+M%C3%BChendislik+Fak%C3%BCltesi/@39.8154563,32.7270336,18.66z/data=!4m5!3m4!1s0x0:0xb198cb0ae8ae290!8m2!3d39.8154639!4d32.7270699?hl=en" class="btn-style-1">
+                                Get Directions
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sponsors_section" class="partners-section">
+            <div class="container">
+                <h2>Sponsors &amp; Partners</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>GOLD SPONSORS</h3>
+                        <div class="partners-box">
+                            <ul>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-1.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-2.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-3.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-4.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-5.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-6.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-7.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-8.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-9.png') ?>" alt="img"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Bronze Sponors</h3>
+                        <div class="partners-box">
+                            <ul>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-1.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-2.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-3.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-4.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-5.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-6.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-7.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-8.png') ?>" alt="img"></a></li>
+                                <li><a href="#"><img src="<?php echo $this->basePath('images/partnet/partnet-img-9.png') ?>" alt="img"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+
+            <section class="footer-section-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Sign up for Updates</h3>
+                            <p>Sign up to receive email updates about the event. Subscribers will receive the latest information on session topics, events, registration and special offers.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Enter Your Email" required>
+                                <button type="submit"><i class="fa fa-angle-double-right"></i></button>
+                            </form>
+
+                            <div id="users">
+                                <?php foreach ($users as $user): ?>
+                                    <div class="user">
+                                        <textarea id="user_<?php echo $user->getId() ?>"><?php echo $user->getName() ?></textarea>
+                                        <a href="#" id="remove_<?php echo $user->getId(); ?>"class="delete_user">X</a>
+                                    </div>
+                                <?php endforeach; ?>
+                                <div id="add">+</div>
+
+                            </div>
+                            <div class="clear-both"></div>
+
+                            <!--                            <div class="past-event-gallery">
+                                                            <h3>Past Events Gallery</h3>
+                                                            <ul>
+                                                                <li><a href="#"><img src="<?php echo $this->basePath('images/past-event/past-event-img-1.jpg') ?>" alt="img"></a></li>
+                                                                <li><a href="#"><img src="<?php echo $this->basePath('images/past-event/past-event-img-2.jpg') ?>" alt="img"></a></li>
+                                                                <li><a href="#"><img src="<?php echo $this->basePath('images/past-event/past-event-img-3.jpg') ?>" alt="img"></a></li>
+                                                                <li><a href="#"><img src="<?php echo $this->basePath('images/past-event/past-event-img-4.jpg') ?>" alt="img"></a></li>
+                                                                <li><a href="#"><img src="<?php echo $this->basePath('images/past-event/past-event-img-5.jpg') ?>" alt="img"></a></li>
+                                                            </ul>
+                                                        </div>-->
+                        </div>
+
+                        <div class="col-md-6">
+                            <h3>Connections</h3>
+                            <p>The Conference Building, Meeting Hall Avenue, New York, United Kingdom, 012345</p>
+                            <address>
+                                <ul>
+                                    <li><i class="fa fa-phone"></i>+90 312 586 8888</li>
+                                    <li><i class="fa fa-phone"></i>+90 312 586 8884</li>
+                                    <!--<li><i class="fa fa-skype"></i>0123 456 7890</li>-->
+                                    <li><i class="fa fa-envelope-o"></i><a href="mailto:">info(at)umtik.com</a></li>
+                                    <li><i class="fa fa-globe"></i><a href="#">www.umtik.com</a></li>
+                                </ul>
+                            </address>
+<!--                            <p>Have any questions, want to become a speaker, or sponsor the event?</p>
+                            <ul class="footer-social">
+                                <li><a href="#">
+                                        <div class="hexagon-social social-color-1"><i class="fa fa-facebook"></i></div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div class="hexagon-social social-color-2"><i class="fa fa-twitter"></i></div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div class="hexagon-social social-color-3"><i class="fa fa-google-plus"></i></div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div class="hexagon-social social-color-4"><i class="fa fa-linkedin"></i></div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div class="hexagon-social social-color-5"><i class="fa fa-youtube"></i></div>
+                                    </a></li>
+                            </ul>-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="footer-section-2">
+                <div class="container">
+                    <div class="logo-box"> <a class="logo" href="index-2.html"> <img alt="img" src="<?php echo $this->basePath('images/logo-umtik.png') ?>"> <span>UMTIK<b>2018 Conference</b></span> </a> </div>
+                    <ul class="footer-menu">
+                        <li><a href="#organizing_committee">Committees</a></li>
+                        <li><a href="#registration_section">Registration</a></li>
+                        <li><a href="#location_section">Location</a></li>
+                        <li><a href="#sponsors_section">Sponsors</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="footer-section-3">
+                <div class="container"> <strong class="copy"><b>UMTIK Conferences</b> &copy; 2017 All Rights Reserved</strong> </div>
+            </section>
+
+        </footer>
+
+    </div>
+
+</div>
