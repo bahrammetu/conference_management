@@ -14,25 +14,28 @@
 return [
     array(
         'module_layouts' => array(
-            'Landing' => 'layout/landing.phtml',
+            'Landing' => 'layout/landing.phtml'
         ),
         'action_layouts' => array(
             'Landing' => array(
                 'index' => 'layout/landing.phtml'
             ),
+//            'Error' => array(
+//                'index' => 'layout/error.phtml'
+//            )
         ),
-//        'db' => array(
-//            'driver' => 'Pdo',
-//            'dsn' => 'mysql:dbname=umtik;host=localhost',
-//            'driver_options' => array(
-//                PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
-//            ),
-//        ),
-//        'service_manager' => array(
-//            'factories' => array(
-//                'Zend\Db\Adapter\Adapter'
-//                => 'Zend\Db\Adapter\AdapterServiceFactory',
-//            ),
-//        ),
+        'db' => array(
+            'driver' => 'Pdo',
+            'dsn' => 'mysql:dbname=umtik;host=localhost',
+            'driver_options' => array(
+                PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
+            ),
+        ),
+        'service_manager' => array(
+            'factories' => array(
+                'Zend\Db\Adapter\Adapter'
+                => 'Zend\Db\Adapter\AdapterServiceFactory',
+            ),
+        ),
     )
 ];

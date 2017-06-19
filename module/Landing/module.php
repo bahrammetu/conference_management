@@ -9,7 +9,10 @@ use Zend\Mvc\MvcEvent;
 use Zend\Session\SessionManager;
 use Zend\Session\Container;
 use Zend\ModuleManager\Feature\ViewHelperProviderInterface;
-
+use Landing\Model\User;
+use Landing\Model\UsersTable;
+use Zend\Db\ResultSet\ResultSet;
+use Zend\Db\TableGateway\TableGateway;
 
 class Module implements AutoloaderProviderInterface, ConfigProviderInterface, ViewHelperProviderInterface {
 
@@ -45,18 +48,20 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface, Vi
     }
 
     public function getServiceConfig() {
+        
 
      }
 
+
     public function getViewHelperConfig() {
-//        return array(
-//            'factories' => array(
-//                'test_helper' => function($sm) {
-//                    $helper = new View\Helper\Testhelper;
-//                    return $helper;
-//                }
-//            )
-//        );
+        return array(
+            'factories' => array(
+                'test_helper' => function($sm) {
+                    $helper = new View\Helper\Testhelper;
+                    return $helper;
+                }
+            )
+        );
     }
 
 }
