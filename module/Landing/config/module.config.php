@@ -1,16 +1,30 @@
 <?php
 
+use Zend\ServiceManager\Factory\InvokableFactory;
+
 return array(
 //    'controllers' => array(
 //        'invokables' => array(
 //            'Landing\Controller\Landing' => 'Landing\Controller\LandingController',
 //            )
 //        ),
-//    'controllers' => array(
-//        'factories' => array(
-//            Controller\LandingController::class => InvokableFactory::class,
-//        ),
-//    ),
+    'service_manager' => array(
+        'aliases' => array(
+            Landing\Model\UserTableInterface::class => Landing\Model\UserTable::class,
+        ),
+        'factories' => array(
+            Landing\Model\UserTable::class => InvokableFactory::class,
+        ),
+    ),
+    'controllers' => array(
+        'factories' => array(
+            // Update the following line:
+            Landing\Controller\LandingController::class => Landing\Factory\LandingControllerFactory::class,
+        ),
+//        'invokables' => array(
+//            'Landing\Controller\Landing' => 'Landing\Controller\LandingController',
+//        )
+    ),
     // The following section is new and should be added to your file
     'router' => array(
         'routes' => array(
@@ -24,7 +38,7 @@ return array(
                         'lang' => '((en)|(tr))',
                     ),
                     'defaults' => array(
-                        'controller' => 'Landing\Controller\Landing',
+                        'controller' => 'Landing\Controller\LandingController',
                         'action' => 'index',
                         'lang' => 'en'
                     ),

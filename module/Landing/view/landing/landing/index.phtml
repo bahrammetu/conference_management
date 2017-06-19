@@ -396,7 +396,7 @@
                                 <!--<div class="col-md-3 col-sm-6">-->
                                 <div class="box">
                                     <div class="inner-box">
-                                        <div class="frame"> <img src="<?php echo $this->basePath('images/top-speakers/top-speakers-img-4.jpg') ?>" alt="img">
+                                        <div class="frame"> <img src="<?php echo $this->basePath('images/committee_members/ali_oral.png') ?>" alt="img">
                                             <div class="name-box"><strong class="name">Prof. Dr. Ali ORAL</strong></div>
                                         </div>
                                         <em class="description">Balıkesir University</em>
@@ -1092,6 +1092,9 @@
                                 <?php foreach ($users as $user): ?>
                                     <div class="user">
                                         <textarea id="user_<?php echo $user->getId() ?>"><?php echo $user->getName() ?></textarea>
+                                        <textarea id="user_<?php echo $user->getId() ?>"><?php echo $user->getSurname() ?></textarea>
+                                        <textarea id="user_<?php echo $user->getId() ?>"><?php echo $user->getEmail() ?></textarea>
+                                        <textarea id="user_<?php echo $user->getId() ?>"><?php echo $user->getRegistration_date() ?></textarea>
                                         <a href="#" id="remove_<?php echo $user->getId(); ?>"class="delete_user">X</a>
                                     </div>
                                 <?php endforeach; ?>
